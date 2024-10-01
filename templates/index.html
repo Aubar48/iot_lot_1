@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API IoT</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>API IoT</h1>
+
+        <h2>Enviar datos</h2>
+        <form id="dataForm">
+            <input type="text" id="sensor" placeholder="Sensor" required>
+            <input type="number" id="value" placeholder="Valor" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Eliminar datos</h2>
+        <form id="deleteForm">
+            <input type="number" id="dataId" placeholder="ID del registro" required>
+            <button type="submit">Eliminar</button>
+        </form>
+
+        <h2>Actualizar datos</h2>
+        <form id="updateForm">
+            <input type="number" id="updateId" placeholder="ID del registro" required>
+            <input type="text" id="updateSensor" placeholder="Nuevo Sensor" required>
+            <input type="number" id="updateValue" placeholder="Nuevo Valor" required>
+            <button type="submit">Actualizar</button>
+        </form>
+
+        <h2>Datos almacenados</h2>
+        <button id="fetchDataButton">Mostrar datos</button>
+        <div id="dataDisplay"></div>
+
+        <div id="response"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

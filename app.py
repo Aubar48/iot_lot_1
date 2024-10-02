@@ -9,7 +9,7 @@ app = Flask(__name__)
 def connect_db():
     try:
         return mysql.connector.connect(
-            host="localhost",
+            host="https://iot-lot-1.onrender.com",
             user="root",
             password="root",  # Cambia las credenciales según tu configuración
             database="iot_data"

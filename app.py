@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, Response, render_template
 import mysql.connector
 from mysql.connector import Error
 from functools import wraps
-from werkzeug.utils import quote
 
 app = Flask(__name__)
 

@@ -20,7 +20,7 @@ def connect_db():
 
 # Autenticación básica
 def authenticate(username, password):
-    return username == 'root' and password == 'root'  # Cambia las credenciales según tus necesidades
+    return username == 'uupemiqze1zhijfn' and password == 'XnExGlv7QzWuydrfjtLK'  # Cambia las credenciales según tus necesidades
 
 def require_auth(f):
     @wraps(f)

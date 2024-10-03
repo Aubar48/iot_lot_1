@@ -9,10 +9,10 @@ app = Flask(__name__)
 def connect_db():
     try:
         return mysql.connector.connect(
-            host="https://iot-lot-1.onrender.com",
-            user="root",
-            password="root",  # Cambia las credenciales según tu configuración
-            database="iot_data"
+            host="bxy5ofa8ezud0x0caavs-mysql.services.clever-cloud.com",
+            user="uupemiqze1zhijfn",
+            password="XnExGlv7QzWuydrfjtLK",  # Cambia las credenciales según tu configuración
+            database="bxy5ofa8ezud0x0caavs"
         )
     except Error as e:
         print(f"Error al conectar a la base de datos: {e}")
